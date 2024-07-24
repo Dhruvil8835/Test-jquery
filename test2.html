@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 2</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            background: #dcdcdc;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        h1 {
+            color: black;
+            text-align: center;
+            background-color: aquamarine;
+            height: 300px;
+            width: 100%;
+        }
+
+        img {
+            margin: 0 auto;
+            display: block;
+        }
+
+        /*PRELOADING------------ */
+        #overlayer {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 1;
+            background: #4a4a4a;
+        }
+
+        .loader {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            z-index: 3;
+            border: 4px solid #b113b3;
+            top: 50%;
+            animation: loader 2s infinite ease;
+        }
+
+        .loader-inner {
+            vertical-align: top;
+            display: inline-block;
+            width: 100%;
+            background-color: #1681af;
+            animation: loader-inner 2s infinite ease-in;
+            border-radius: 10px;
+        }
+
+        @keyframes loader {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            25% {
+                transform: rotate(180deg);
+            }
+
+            50% {
+                transform: rotate(180deg);
+            }
+
+            75% {
+                transform: rotate(360deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes loader-inner {
+            0% {
+                height: 0%;
+            }
+
+            25% {
+                height: 0%;
+            }
+
+            50% {
+                height: 100%;
+            }
+
+            75% {
+                height: 100%;
+            }
+
+            100% {
+                height: 0%;
+            }
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="overlayer"></div>
+    <span class="loader">
+        <span class="loader-inner"></span>
+    </span>
+    <h1>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, aliquam!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, incidunt?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, adipisci!
+    </h1>
+    <img src="" alt="" width="30%" />
+
+
+    <script>
+        $(window).ready(function () {
+            $(".loader").delay(3000).fadeOut("slow");
+            $("#overlayer").delay(3000).fadeOut("slow");
+        })
+    </script>
+</body>
+
+</html>

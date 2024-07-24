@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test1</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .slider {
+            height: 400px;
+            width: 30%;
+            background-color: aqua;
+            border-radius: 20px;
+
+        }
+
+
+        .para1 {
+            height: 50px;
+            width: 100%;
+            background-color: grey;
+            border-radius: 10px;
+        }
+
+        .para2 {
+            height: 50px;
+            width: 100%;
+          
+            display: none;
+            background-color: skyblue;
+            border-radius: 10px;
+        }
+        .para3{
+            height: 50px;
+            width: 100%;
+           
+            /* display: none; */
+            background-color: grey;
+            border-radius: 10px;
+        }
+        .para4{
+            height: 50px;
+            width: 100%;
+           
+            display: none;
+            background-color: skyblue;
+            border-radius: 10px;
+        }
+        
+        .para5{
+            height: 50px;
+            width: 100%;
+           
+            /* display: none; */
+            background-color: grey;
+            border-radius: 10px;
+        }
+        .para6{
+            height: 50px;
+            width: 100%;
+           
+            display: none;
+            background-color: skyblue;
+            border-radius: 10px;
+        }
+        .para1 img{
+            height: 20px;
+            width: 20px;
+            margin-left: 11%;
+        }
+        
+        .para3 img{
+            height: 20px;
+            width: 20px;
+            margin-left: 528px;
+        }
+        
+        .para5 img{
+            height: 20px;
+            width: 20px;
+            margin-left: 528px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="slider">
+        <div class="para1">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, harum.
+            <img src="down.png" alt="">
+        </div>
+        <div class="para2">
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, et?
+            
+        </div>
+
+        <div class="para3">
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, incidunt!
+            <img src="down.png" alt="">
+        </div>
+        <div class="para4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, optio!
+            
+        </div>
+
+        <div class="para5">
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, possimus.
+            <img src="down.png" alt="">
+        </div>
+        <div class="para6">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, nisi!
+           
+        </div>
+
+
+
+    </div>
+    <script>
+        $(document).ready(function () {
+            $(".para1").click(function () {
+                $(".para2").slideToggle()
+            })
+        })
+
+        $(document).ready(function () {
+            $(".para3").click(function () {
+                $(".para4").slideToggle()
+            })
+        })
+    
+        $(document).ready(function () {
+            $(".para5").click(function () {
+                $(".para6").slideToggle()
+            })
+        })
+
+
+    </script>
+</body>
+
+</html>
